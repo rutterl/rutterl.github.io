@@ -12,7 +12,7 @@ function App() {
     <>
     <AnimatePresence exitBeforeEnter initial={false}>
         <Routes  location={location} key={location.pathname}>
-          <Route path="/" element={<Landing/>} />
+          <Route exact path="/website" element={<Landing/>} />
           <Route path="/About" element={<About/>} />
           <Route path="/Resume" element={<Resume/>} />
           <Route path="/Portfolio" element={<Portfolio/>} />
