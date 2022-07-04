@@ -46,7 +46,7 @@ function About() {
 
 
       <div className="about-header">
-        <p>Let's explore my skill</p>
+        <p>Let's explore my skillzzzzz</p>
         <motion.h2  whileHover={{ scale: 1.05 }}><a style={{ color:"white", textDecoration: "none"}}target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/">Call me Nik</a></motion.h2>
         <ul className='animatedBars-ul'>
           <li className="animatedBars"></li>
