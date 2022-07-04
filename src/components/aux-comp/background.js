@@ -1,5 +1,5 @@
 import '../../App.css';
-import myVideo from "../../video/rain.mp4";
+import myVideo from "../../video/rain_test.mp4";
 
 function Background() {
   return (
