@@ -196,25 +196,20 @@ useEffect(() =>{
 
 
           <div className='text-research'>
-              <h3>The Ensemble Lab</h3>
               <div className='research-info'>
                 <div className='research-img-contain'>
                   <div className='research-img'></div>
                 </div>
                 <div className='text-research'>
-                    <h3>Message Passing Neural Networks</h3>
                     <h6>My research is at the interesection of Chemical Engineering and Machine Learning. My cohort utilizes the bonding graph of Covalent Organic Frameworks as input to a graph neural network. With this we utilize deep learning and spatial convolutions to effectively predict gas adsorptions.</h6>
-                    <div ref={ref3}></div>
-
                 </div>
                 <div></div>
               </div>
             </div>
-
-
           </div>
           </motion.div>
 
+        <div ref={ref3}></div>
 
       </div>
 

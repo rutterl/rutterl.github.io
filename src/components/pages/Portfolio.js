@@ -35,6 +35,14 @@ function Portfolio() {
   <Project key={proj["title"]} data={proj}></Project> 
   );
 
+  useEffect(()  => {
+    document.body.style.overflowY = "scroll";
+
+    return () => {
+      document.body.style.overflowY = "hidden";
+    };
+});
+
   return (
     <motion.div 
     variants={routeTransition}

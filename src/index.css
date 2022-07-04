@@ -995,6 +995,143 @@ video {
   width: 50px;
 }
 
+.ab-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.ab-header
+{
+  text-align: center;
+  width: 100%;
+  font-size: 1.2vw;
+  justify-content: center;
+}
+
+.ab-header p
+{
+  font-size: 15px;
+  margin-bottom: 17px;
+}
+
+.ab-header h2
+{
+  color: #007b50;
+  font-size: 42px;
+}
+
+.pr-pic
+{
+  width: 300px;
+  height: 400px;
+  background-image: url("./images/IMG_1753.jpg");
+  background-size:    contain;                    /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;     
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 50px;
+  padding-right: 100px;
+
+}
+
+.row2
+{
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ab-ul
+{
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+}
+
+.ab-ul li
+{
+  margin-left: 15px;
+}
+
+.no-left
+{
+  margin-left: 0px !important;
+}
+
+.sep
+{
+  width: 100%;
+  height: 1px;
+  background-color:#2f2f2f;
+  display: inline-block;
+}
+
+.sep-container
+{
+  width: 25%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.resume-button
+{
+  margin-left: 20px;
+}
+
+.ab-ul
+{
+  margin-right: 20px;
+}
+
+.pr-descriptions
+{
+  width: 500px;
+  height: 75%;
+  border-radius: 2px;
+}
+
+.pr-main
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.pr-descriptions p
+{
+
+ font-size: 14px;
+ margin-top: 15px;
+ margin-left: 15px;
+ margin-right: 15px;
+ border-bottom: 2px solid rgba(255,255,255,.08);
+  margin-bottom: 0;
+  padding-bottom: 29px;
+
+}
+
+.no-bottom
+{
+  border-bottom: 0px !important;
+}
+
+.pr-descriptions h3
+{
+  font-size: 24px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white;
+}
+
 @media screen and (max-width: 910px) {
 
   .resume-row{
@@ -1143,7 +1280,6 @@ video {
   {
     display: block;
     width: 100%;
-    background-color:#262626;
   }
   
   .links-mobile
@@ -1210,10 +1346,16 @@ video {
   {
     width: 90%;
   }
+
+  .text-research h6
+  {
+    width: 100%;
+  }
   
   .research-img-contain
   {
     width: 100%;
+    height: 200px;
   }
 
   .project-overlay
@@ -1259,6 +1401,8 @@ video {
   {
     font-size: 5vw;
   }
+
+
   
 
   body
@@ -1271,6 +1415,8 @@ video {
   {
     display: none;
   }
+
+  .pr-pic{display: none;}
 
 .profile-main
 {
@@ -1314,6 +1460,15 @@ video {
     margin-left: 76px;
     border-bottom: 0px;
   }
+  
+  .pr-descriptions p
+  {
+    border-bottom: 0px;
+  }
+  
+  .sep-container{
+    display: none;
+  }
 
   .gone
   {
@@ -1332,6 +1487,14 @@ video {
 }
 
 @media screen and (max-height: 700px) {
+
+
+  body
+  {
+    overflow-y: scroll;
+
+  }
+
   .profile-main
   {
     margin-top: 35%;
