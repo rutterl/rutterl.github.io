@@ -375,6 +375,37 @@ ul
   flex-direction: row;
 }
 
+.underline
+{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+
+}
+
+.underline::after
+{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.underline:hover:after { 
+  width: 80%; 
+  left: 10; 
+}
+
 .nav-elements a
 {
   display: flex;
@@ -709,12 +740,42 @@ video {
   cursor:pointer;
 }
 
-.progress-bar
+.progress-bar-1
+{
+  width: 445px;
+  background-color: #009e66;
+  height: 9px;
+}
+
+.progress-bar-2
+{
+  width: 437px;
+  background-color: #009e66;
+  height: 9px;
+}
+.progress-bar-3
+{
+  width: 437px;
+  background-color: #009e66;
+  height: 9px;
+}
+.progress-bar-4
 {
   width: 420px;
   background-color: #009e66;
   height: 9px;
-
+}
+.progress-bar-5
+{
+  width: 410px;
+  background-color: #009e66;
+  height: 9px;
+}
+.progress-bar-6
+{
+  width: 400px;
+  background-color: #009e66;
+  height: 9px;
 }
 
 
@@ -1239,10 +1300,31 @@ video {
     margin-left: 0px;
   }
 
-  .progress-bar
-  {
+  .progress-bar-1 {
+    width: 445px;
     background-color:#101010;
-  }
+    height: 9px;
+}  .progress-bar-2 {
+    width: 445px;
+    background-color:#101010;
+    height: 9px;
+}  .progress-bar-3 {
+    width: 445px;
+    background-color:#101010;
+    height: 9px;
+}  .progress-bar-4 {
+    width: 445px;
+    background-color:#101010;
+    height: 9px;
+}  .progress-bar-5 {
+    width: 445px;
+    background-color:#101010;
+    height: 9px;
+}  .progress-bar-6 {
+    width: 445px;
+    background-color:#101010;
+    height: 9px;
+}
 
   .row-title
   {

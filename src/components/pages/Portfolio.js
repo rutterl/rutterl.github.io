@@ -84,9 +84,9 @@ function Portfolio() {
             {projectList[2]}
           </motion.div>
           <motion.div className='portfolio-row-tech' >
-            {projectList[0]}
-            {projectList[1]}
-            {projectList[2]}
+            {projectList[3]}
+            {projectList[4]}
+            {projectList[5]}
           </motion.div>
       </div>
       <div >

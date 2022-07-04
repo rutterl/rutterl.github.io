@@ -28,11 +28,11 @@ function EntryExperience() {
 
         >
             <div className='row row-title'>
-              <h5>Software Engineer I</h5>
-              <span className='span-resume'>Nike</span>
+              <h5>Software Engineer</h5>
+              <span className='span-resume'>Nike WHQ</span>
             </div>
             <span>July 2022 - Current</span>
-            <p>Developing production grade data driven applications augmenting user interaction</p>
+            <p>-</p>
 
         </motion.div>
 

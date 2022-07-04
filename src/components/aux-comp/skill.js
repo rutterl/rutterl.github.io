@@ -19,7 +19,7 @@ function  Skill(props) {
 
               onClick={props.click}
           >
-            <div class="progress-bar"></div>
+            <div class={"progress-bar-" + props.cl}></div>
           </motion.div>
       </div>
     </>

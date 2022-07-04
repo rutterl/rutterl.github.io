@@ -1,10 +1,11 @@
 import '../../App.css';
 import TypeWriter from 'typewriter-effect';
+import {motion} from 'framer-motion'
 
 function Welcome() {
   return (
     <div className="welcome">
-        <h1>Nikolas Achatz</h1>
+        <motion.h1 style={{cursor: "pointer"}} whileTap={{scale: 1.15 }} whileHover={{ scale: 1.05 }}><a style={{color: "white", textDecoration: "none"}} target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/">Nikolas Achatz</a></motion.h1>
         <div className="type">
         <TypeWriter 
           options={{

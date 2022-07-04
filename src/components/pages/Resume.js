@@ -29,7 +29,19 @@ function Resume() {
   
   const [modalOpen3, setModalOpen3] = useState(0);
   const close3 = () => setModalOpen3(0);
-  const open3 = () => setModalOpen3(1);
+  const open3 = () => setModalOpen3(1);  
+  
+  const [modalOpen4, setModalOpen4] = useState(0);
+  const close4 = () => setModalOpen4(0);
+  const open4 = () => setModalOpen4(1);  
+  
+  const [modalOpen5, setModalOpen5] = useState(0);
+  const close5 = () => setModalOpen5(0);
+  const open5 = () => setModalOpen5(1); 
+  
+  const [modalOpen6, setModalOpen6] = useState(0);
+  const close6 = () => setModalOpen6(0);
+  const open6 = () => setModalOpen6(1);
 
   const animation = useAnimation();
   const animation2 = useAnimation();
@@ -160,15 +172,16 @@ useEffect(() =>{
               <div className='skills-col1'>
                 
                 
-                <Skill click={() => (modalOpen == 1 ? close() : open1())}  key="loading" skill="Python" percent="95%"></Skill>
-                <Skill click={() => (modalOpen2 == 1 ? close2() : open2())} skill="C# (.NET Core)" percent="93%"></Skill>
-                <Skill click={() => (modalOpen3 == 1 ? close3() : open3())} skill="JavaScript (React)" percent="95%"></Skill>
+                <Skill click={() => (modalOpen == 1 ? close() : open1())}  key="loading" skill="Python" percent="98%" cl="1"></Skill>
+                <Skill click={() => (modalOpen2 == 1 ? close2() : open2())} skill="C# (.NET Core)" percent="95%" cl="2"></Skill>
+                <Skill click={() => (modalOpen4 == 1 ? close4() : open4())} skill="Mathematics" percent="95%" cl="3"></Skill>
               </div>  
 
               <div className='skills-col2'>
-                <Skill skill="Python" percent="95%"></Skill>
-                <Skill skill="C# (.NET Core)" percent="95%"></Skill>
-                <Skill click={() => (modalOpen3 == 1 ? close3() : open3())} skill="JavaScript (React)" percent="83%"></Skill>
+                <Skill click={() => (modalOpen5 == 1 ? close5() : open5())} skill="SQL/NoSQL" percent="93%" cl="4"></Skill>
+                <Skill click={() => (modalOpen3 == 1 ? close3() : open3())} skill="JavaScript (React)" percent="89%" cl="5"></Skill>
+                <Skill click={() => (modalOpen6 == 1 ? close6() : open6())} skill="C++/C" percent="85%" cl="6"></Skill>
+
               </div>  
             </div>
 
@@ -219,6 +232,9 @@ useEffect(() =>{
       {modalOpen == 1 && <Modal skill={skills[0]} modalOpen={modalOpen} handleClose={close}></Modal>}
       {modalOpen2 == 1 && <Modal skill={skills[1]} modalOpen={modalOpen2} handleClose={close2}></Modal>}
       {modalOpen3 == 1 && <Modal skill={skills[2]} modalOpen={modalOpen3} handleClose={close3}></Modal>}
+      {modalOpen4 == 1 && <Modal skill={skills[3]} modalOpen={modalOpen4} handleClose={close4}></Modal>}
+      {modalOpen5 == 1 && <Modal skill={skills[4]} modalOpen={modalOpen5} handleClose={close5}></Modal>}
+      {modalOpen6 == 1 && <Modal skill={skills[5]} modalOpen={modalOpen6} handleClose={close6}></Modal>}
     </motion.div>
   );
 }
