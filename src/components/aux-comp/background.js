@@ -3,7 +3,7 @@ import myVideo from "../../video/rain.mp4";
 
 function Background() {
   return (
-    <video autoPlay muted loop oncontextmenu="return false;">
+    <video playsInLine autoPlay muted loop onContextMenu="return false;">
           <source src={myVideo} type="video/mp4"/>
         Your browser does not support videos :(
     </video>    

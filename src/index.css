@@ -524,11 +524,10 @@ video {
 
 .profile-main
 {
-
   width: 90%;
   height: 550px;
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   margin-right: -50%;
   font-size: 16px;
@@ -1272,9 +1271,6 @@ video {
   {
     display: none;
   }
-
-
-
 
 .profile-main
 {
