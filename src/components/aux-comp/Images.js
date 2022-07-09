@@ -1,6 +1,8 @@
 export const images = [
-    require("./images/gnn.jpg"),
-    require("./images/te.png"),
-    require("./images/house.png")
+    require("./images/bff.JPEG"),
+    require("./images/darce.jpg"),
+    require("./images/family.jpg"),
+    require("./images/grapple.jpg"),
+    require("./images/sister.JPG")
 ];
   

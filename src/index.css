@@ -112,6 +112,26 @@ html, body {
   padding-top: 5px;
 }
 
+.gallery-img
+{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  font-size: 16px;
+  font-size: 1.9vw;
+}
+
+.gallery-container
+{
+  display: relative;
+  position: relative;
+  margin-top: 50px;
+  width: 1000px;
+  height: 700px;
+}
+
 
 .resume-container
 {
@@ -274,10 +294,14 @@ html, body {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  font-size: 16px;
-  font-size: 1.9vw;
+  font-size: 36px;
   transform: translate(-50%, -50%) ;
   justify-content: center;
+}
+
+.memories
+{
+  margin-left: 10px;
 }
 
 .type
@@ -335,7 +359,7 @@ ul
   display: flex;
 
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   color: #dad9d9;
   font-size: 15.5px;
   width:100%;
@@ -347,6 +371,11 @@ ul
   text-align: center;
   margin: 0;
   margin-bottom: 20px !important;
+}
+
+.no-margin
+{
+  margin-right: 0px !important;
 }
 
 .curtain
@@ -443,6 +472,8 @@ video {
   margin-left: 32px;
 }
 .social-icons li {margin-top: 25px;}
+
+
 
 .block-right{position: absolute;right:35px; bottom: 34px;}
 .block-left{position: absolute; left:0px;bottom: 34px;}
@@ -549,7 +580,6 @@ video {
 .burgere:hover .burger-strip div:last-child {
   transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
-
 
 /* Profile styling <3 */
 
@@ -1352,6 +1382,25 @@ video {
 
 @media screen and (max-width: 750px) {
 
+  .gallery-img
+  {
+    width: 50%;
+    height: 500px;
+    position:absolute;
+    top: 0%;
+    left: 25%;
+    font-size: 16px;
+    font-size: 1.9vw;
+  }
+
+  .gallery-container
+  {
+    display: relative;
+    position: relative;
+    margin-top: 50px;
+    width: 1000px;
+    height: 600px;
+  }
 
   .nav-elements
   {
@@ -1597,6 +1646,11 @@ video {
 @media screen and (max-width: 300px) {
 
   .about-content
+  {
+    display: none;
+  }
+
+  .mobile-life
   {
     display: none;
   }

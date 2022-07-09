@@ -15,7 +15,6 @@ function Icons() {
           <motion.li whileTap={{scale: 1.15 }} whileHover={{ scale: 1.05 }}><a target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/"><FontAwesomeIcon icon={faLinkedin}  style={{ height: "2em", color: "white" }} /></a></motion.li>
         </ul>
       </div>
-
     </div>
   );
 }

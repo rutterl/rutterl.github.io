@@ -9,24 +9,23 @@ function Navbar() {
   return (
       <div className="nav-contain">
           <div className='nav-elements'>
-            <motion.a whileTap={{scale: 1.15 }} whileHover={{ scale: 1.05 }} target="_blank" href="https://github.com/nachatz"><FontAwesomeIcon icon={faSpotify} style={{ height: "2em", color: "white", opacity: 0.8, marginLeft: "15px" }} /></motion.a>
               <div className='links'>
                   <Link className="underline" style={{textDecoration: "none", color: "#dad9d9"}} to='/about'>About</Link>
                   <Link className="underline" style={{textDecoration: "none", color: "#dad9d9"}} to='/resume'>Resume</Link>
                   <Link className="underline" style={{textDecoration: "none", color: "#dad9d9"}} to='/portfolio'>Portfolio</Link>
-                  <a className="underline" style={{textDecoration: "none", color: "#dad9d9"}} href="https://github.com/nachatz"  target="_blank">Learn</a>
+                  <Link className="underline" style={{textDecoration: "none", color: "#dad9d9"}} to='/life'>My Life</Link>
+                  <a className="underline no-margin" style={{textDecoration: "none", color: "#dad9d9"}} href="https://github.com/nachatz/LearnAI" target="_blank">Learn AI</a>
               </div>
           </div>
-
 
           <div className='nav-mobile'>
             <div className='links-mobile'>
                   <Link style={{textDecoration: "none", color: "#dad9d9"}} to='/about'>About</Link>
                   <Link style={{textDecoration: "none", color: "#dad9d9"}} to='/resume'>Resume</Link>
                   <Link style={{textDecoration: "none", color: "#dad9d9"}} to='/portfolio'>Portfolio</Link>
+                  <Link style={{textDecoration: "none", color: "#dad9d9"}} to='/life' className='mobile-life'>Life</Link>
               </div>
           </div>
-            
       </div>
   );
 }
