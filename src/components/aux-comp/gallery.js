@@ -39,15 +39,20 @@ export function Gallery(props) {
     setPage([page + newDirection, newDirection]);
   };
 
+  var interval = 0;
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    interval = setInterval(() => {
       paginate(1);
     }, 5000);
 
     return () => clearInterval(interval);
-
   });
+
+  function next(e) {
+    paginate(1);
+    return () => clearInterval(interval);
+  }
 
 
   return (
@@ -69,6 +74,7 @@ export function Gallery(props) {
                 opacity: { duration: 0.2 }
               }}
             />
+            <button onClick={next} className="next-button">Next</button>
           </AnimatePresence>
         </div>
       </div>

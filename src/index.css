@@ -123,6 +123,29 @@ html, body {
   font-size: 1.9vw;
 }
 
+.resume-header
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.next-button
+{
+  width: 500px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  color:#009e66;
+  cursor: pointer;
+  left: 25%;
+  font-size: 16px;
+  margin-top: 52%;
+  font-size: 24px
+}
+
 .gallery-container
 {
   display: relative;
@@ -130,6 +153,11 @@ html, body {
   margin-top: 50px;
   width: 1000px;
   height: 700px;
+}
+
+.next-button
+{
+  position: relative;
 }
 
 
@@ -164,18 +192,7 @@ html, body {
   cursor: pointer;
 }
 
-.resume-container p
-{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
-  text-align: start;
-  width: 200px;
-  padding-right: 5px;
 
-}
 
 .resume-row
 {
@@ -302,6 +319,7 @@ html, body {
 .memories
 {
   margin-left: 10px;
+  padding-right: 0px;
 }
 
 .type

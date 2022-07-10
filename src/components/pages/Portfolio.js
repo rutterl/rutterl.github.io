@@ -64,9 +64,9 @@ function Portfolio() {
             </Link>
         </div>
 
-          <div className="resume-header">
-            <p>Details, details, details...</p>
-            <motion.h2  whileHover={{ scale: 1.05 }}><a style={{ color:"white", textDecoration: "none"}}target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/">Portfolio</a></motion.h2>
+          <div className="ab-header">
+            <p>Fun is the key to success</p>
+            <motion.h2  whileHover={{ scale: 1.05 }}><a style={{ color:"white", textDecoration: "none"}}target="_blank" href="https://www.github.com/nachatz">Portfolio</a></motion.h2>
             <ul className='animatedBars-ul'>
               <li className="animatedBars"></li>
               <li className="animatedBars"></li>

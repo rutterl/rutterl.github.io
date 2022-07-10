@@ -69,8 +69,8 @@ function Life() {
             </div>
             </Link>
         </div>
-          <div className="resume-header">
-            <p className='memories'>My memories</p>
+          <div className="ab-header">
+            <p style={{textAlign: "center"}}>My favorite memories</p>
             <motion.h2  whileHover={{ scale: 1.05 }}><a style={{ color:"white", textDecoration: "none"}}target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/">Life</a></motion.h2>
             <ul className='animatedBars-ul'>
               <li className="animatedBars"></li>

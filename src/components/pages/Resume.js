@@ -114,7 +114,7 @@ useEffect(() =>{
             </Link>
         </div>
 
-          <div className="resume-header">
+          <div className="ab-header">
             <p>The past and present</p>
             <motion.h2  whileHover={{ scale: 1.05 }}><a style={{ color:"white", textDecoration: "none"}}target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/">Resume</a></motion.h2>
             <ul className='animatedBars-ul'>
@@ -155,6 +155,12 @@ useEffect(() =>{
           </div>
 
           {/* Im crazy with the scroll in views <3 */}
+          <br className='stop-inspecting-my-code-bro'></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           <br></br>
@@ -187,12 +193,12 @@ useEffect(() =>{
 
           </motion.div>
 
+          <br className='what-did-the-chicken-say'></br>
           <br></br>
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
-          <br></br>
+          <br className='stop-inspecting-me-codes'></br>
 
           <div ref={ref2}></div>
 
@@ -201,7 +207,7 @@ useEffect(() =>{
           >
             <motion.div className='resume-tech-info'>
               <p className="resume-skills-top">Pressing forward</p>
-              <h2 className="resume-skills">Research</h2>
+              <a target="_blank" style={{textDecoration: "none"}}href="https://simonensemble.github.io/"><h2 className="resume-skills">Research</h2></a>
             </motion.div>
 
 
@@ -214,7 +220,7 @@ useEffect(() =>{
                   <div className='research-img'></div>
                 </div>
                 <div className='text-research'>
-                    <h6>My research is at the interesection of Chemical Engineering and Machine Learning. My cohort utilizes the bonding graph of Covalent Organic Frameworks as input to a graph neural network. With this we utilize deep learning and spatial convolutions to effectively predict gas adsorptions.</h6>
+                    <h6>My research is at the interesection of Chemical Engineering and Machine Learning. My cohort utilizes the crystal structure of Covalent Organic Frameworks as input to a graph neural network. With this we utilize deep learning and spatial convolutions to effectively predict gas adsorptions.</h6>
                 </div>
                 <div></div>
               </div>

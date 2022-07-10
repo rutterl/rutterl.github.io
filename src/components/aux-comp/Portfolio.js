@@ -32,7 +32,7 @@ export const projects = [
             require("./images/fx.png"),
             require("./images/learnai.png")
         ],
-        url: "https://github.com/nachatz"
+        url: "https://github.com/nachatz/learnai"
     },
     {
         title: "New Friends",

@@ -69,7 +69,7 @@ function About() {
 
           <div className='pr-descriptions'>
               <h3>I'm a Software Engineer with strong foundations in Mathematics</h3>
-              <p>My interests are directly related to machine learning and general optimization. The field of artificial intelligence inspires me daily to grow my understanding of the field. Due to this, I'm a fantatic of new techniques and learning to work with as many experts as possible. In terms of my personal interests, I enjoy going for daily walks and relaxing with friends discussing a variety of topics. Feel free to reach out to me regarding business or personal inquires, I'm always open to chat. </p>
+              <p>My interests are directly related to optimization of data. The field of artificial intelligence and data engineering inspires me daily to grow my understanding of the fields. Due to this, I'm a fantatic of new techniques and learning to work with as many experts as possible. In terms of my personal interests, I enjoy going for daily walks and relaxing with friends while discussing a variety of topics. Feel free to reach out to me regarding business or personal inquires, I'm always open to chat. </p>
               <div className='ab-separator'></div>
               <address className='ab-content'>
                     <div className='info'>
@@ -84,9 +84,9 @@ function About() {
                       </div>
                     </div>
                     <div className='row2'>
-                      <a href="../Resume.pdf" download="../Resume.pdf"><motion.button whileTap={{scale: 1.15 }} whileHover={{ scale: 1.05 }} className="resume-button">Resume</ motion.button></a>
+                      <a target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/" ><motion.button whileTap={{scale: 1.15 }} whileHover={{ scale: 1.05 }} className="resume-button">Resume</ motion.button></a>
                       <div className='sep-container'><div className='sep'></div></div>
-                      <ul class="ab-ul">
+                      <ul className="ab-ul">
                       <motion.li className="no-left" whileTap={{scale: 1.15 }} whileHover={{ scale: 1.05 }}><a target="_blank" href="https://github.com/nachatz"><FontAwesomeIcon icon={faGithub} style={{ height: "2em", color: "white" }} /></a></motion.li>
                       <motion.li whileTap={{scale: 1.15 }} whileHover={{ scale: 1.05 }}><a target="_blank" href="https://www.linkedin.com/in/nikolas-achatz-074973187/"><FontAwesomeIcon icon={faLinkedin}  style={{ height: "2em", color: "white" }} /></a></motion.li>
                       </ul>

@@ -4,13 +4,13 @@ import { motion} from 'framer-motion'
 function  Skill(props) {
   return (
     <>
-      <div class="single-skill">
-          <div class="skill-info">
-            <span class="skill-name">{props.skill}</span>
-            <span class="skill-percentage">{props.percent}</span>
+      <div className="single-skill">
+          <div className="skill-info">
+            <span className="skill-name">{props.skill}</span>
+            <span className="skill-percentage">{props.percent}</span>
           </div>
 
-          <motion.div class="progress"
+          <motion.div className="progress"
              whileHover={{
               scale: 1.10,
               boxShadow: "0px 0px 4px gray",
@@ -19,7 +19,7 @@ function  Skill(props) {
 
               onClick={props.click}
           >
-            <div class={"progress-bar-" + props.cl}></div>
+            <div className={"progress-bar-" + props.cl}></div>
           </motion.div>
       </div>
     </>

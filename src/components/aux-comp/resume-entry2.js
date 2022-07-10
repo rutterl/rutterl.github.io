@@ -12,7 +12,7 @@ function EntryExperience() {
   }
   return (
     <>
-        <motion.div className='entry' 
+        {/* <motion.div className='entry' 
             whileHover={{
             scale: 1.12,
             x: 105,
@@ -34,7 +34,7 @@ function EntryExperience() {
             <span>July 2022 - Current</span>
             <p>-</p>
 
-        </motion.div>
+        </motion.div> */}
 
         <motion.div className='entry' 
             whileHover={{
@@ -52,7 +52,7 @@ function EntryExperience() {
             onClick={() => openInNewTab('https://www.teachengineering.org/ngss_explorer')}
             >
             <div className='row row-title'>
-              <h5>Software Engineer</h5>
+              <h5>Software Dev.</h5>
               <span className='span-resume'>TeachEngineering</span>
             </div>
             <span>March 2021 - June 2022</span>
@@ -76,7 +76,7 @@ function EntryExperience() {
 
         >
             <div className='row row-title'>
-              <h5>ML Researcher</h5>
+              <h5>ML Research</h5>
               <span className='span-resume'>Oregon State University</span>
             </div>
             <span>June 2021 - July 2022</span>
