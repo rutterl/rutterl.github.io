@@ -45,7 +45,8 @@ function Resume() {
 
   const animation = useAnimation();
   const animation2 = useAnimation();
-
+  const isMobile = window.innerWidth < 768;
+  
   useEffect(() =>{
     if(inView)
     {
@@ -91,7 +92,42 @@ useEffect(() =>{
   }
 }, [inView2, inView3])
 
+const [width, setWidth] = useState(window.innerWidth);
 
+useEffect(() => {
+  function handleResize() {
+    setWidth(window.innerWidth);
+  }
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, [width]);
+
+
+function checkHover1(check)
+{
+  if (width > 1000)
+  {
+    if (check){
+      setShift2(100);
+    }else
+    {
+      setShift2(0);
+    }
+  }
+}
+function checkHover2(check)
+{
+  if (width > 1000)
+  {
+    if (check){
+      setShift(-100);
+    }else
+    {
+      setShift(0);
+    }
+  }
+}
+console.log(width);
 
   return (
     <motion.div 
@@ -134,8 +170,8 @@ useEffect(() =>{
                 <motion.div           
                 animate={{x: shift}}
 
-                onMouseEnter={() => setShift2(100)}
-                onMouseLeave={() => setShift2(0)}
+                onMouseEnter={() => checkHover1(true)}
+                onMouseLeave={() => checkHover1(false)}
                 >
                   <Entry2></Entry2>
                 </motion.div>
@@ -146,8 +182,8 @@ useEffect(() =>{
                 <motion.div           
                 animate={{x: shift2}}
               
-                onMouseEnter={() => setShift(-100)}
-                onMouseLeave={() => setShift(0)}
+                onMouseEnter={() => checkHover2(true)}
+                onMouseLeave={() => checkHover2(false)}
                 >
                   <Entry></Entry>
                 </motion.div>
@@ -171,7 +207,7 @@ useEffect(() =>{
             <motion.div className='resume-tech-info'>
               <p className="resume-skills-top">Sharpening the craft</p>
               <h2 className="resume-skills">Tech Stack</h2>
-              <p className="resume-skills">** Click on each to learn more</p>
+              <p className="resume-skills mobile-hide">** Click on each to learn more</p>
             </motion.div>
 
             <div className='skills'>
@@ -207,7 +243,7 @@ useEffect(() =>{
           >
             <motion.div className='resume-tech-info'>
               <p className="resume-skills-top">Pressing forward</p>
-              <a target="_blank" style={{textDecoration: "none"}}href="https://simonensemble.github.io/"><h2 className="resume-skills">Research</h2></a>
+              <h2 className="resume-skills">Research</h2>
             </motion.div>
 
 

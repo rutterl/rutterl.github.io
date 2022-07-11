@@ -854,6 +854,10 @@ video {
 
 }
 
+.resume-skills
+{
+  cursor: default !important;
+}
 .resume-skills-top
 {
   font-size: 15px !important;
@@ -1241,7 +1245,18 @@ video {
   color: white;
 }
 
+
+
 @media screen and (max-width: 910px) {
+
+  .progress
+  {
+    cursor: default !important;
+  }
+  .mobile-hide
+  {
+    display: none;
+  }
 
   .resume-row{
     display: flex;
@@ -1271,6 +1286,7 @@ video {
   .resume-experience
   {
     padding-right: 150px;
+    cursor: default;
   }
 
   
@@ -1385,6 +1401,7 @@ video {
   .resume-education h3
   {
     text-align: center;
+    cursor: default;
   }
 
   .portfolio-row-tech

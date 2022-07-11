@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {useState, useEffect} from "react"
 
 function About() {
   const routeTransition = {
@@ -25,6 +26,14 @@ function About() {
       }
     }
   };
+
+  useEffect(()  => {
+    document.body.style.overflowY = "scroll";
+
+    return () => {
+      document.body.style.overflowY = "hidden";
+    };
+});
   return (
 
 <motion.div 
